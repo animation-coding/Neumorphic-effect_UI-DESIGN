@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+ 
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+:root {
+  --value: 40%;
+  --back-color: #EBECF0;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ebecf0; 
+   font-family: 'Poppins',sans-serif;
+   color: #8a92a5;
+
+
+}
+.container
+{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width:909px;
+}
+.container .box1
+{
+  width: 263px;
+  margin: 20px;
+  padding: 10px 2px;
+ }  
+.container .box1 .AC_tx
+{
+    display:block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: #ebecf0;
+    box-shadow:-4px -4px 12px rgb(255, 255, 255), 4px 4px 12px rgba(121, 130, 160, 0.747);
+    border-radius: 35px;
+
+}
+
+.AC_tx h1
+{
+    font-size: 80px;
+    text-align: center;
+    line-height: 150px;
+  background: -webkit-gradient(linear, left top, right top, from(#30CFD0), to(#330867));
+  background: linear-gradient(to right, #185ef0, #30CFD0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}  
+.container .box1 .button_Share
+{
+    display: block;
+    position: relative;
+    top: 25px;
+}
+
+.btn2
+{
+    position: relative;
+    width: 60%;
+    padding:10px ;
+    box-shadow:-4px -4px 12px rgb(255, 255, 255),
+     4px 4px 12px rgba(121, 130, 160, 0.747);
+     background: #ebecf0;
+     outline: none;
+     border: none;
+     font-size: 18px;
+     border-radius: 50px;
+     margin-bottom:  15px;
+     color: #8a92a5;
+     font-weight: 500;
+     font-family: 'Poppins',sans-serif;
+     display: inline-block;
+}
+.btn2:active
+{
+    box-shadow:inset -2px -2px 6px rgb(255, 255, 255),
+    inset 2px 2px 6px rgba(121, 130, 160, 0.747);
+    color: #185ef0;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container .box1 .button_t
+{
+    display:block;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.buttont
+{
+    display: block;
+    position: relative;
+    box-shadow:-4px -4px 12px rgb(255, 255, 255),
+     4px 4px 12px rgba(121, 130, 160, 0.747);
+    width: 220px;
+    height: 45px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight:500;
+    outline: none;
+    border: none;
+    background: #ebecf0;
+    line-height: 36px;
+    margin: 20px;
+    padding: 5px 15px;cursor:pointer;
+   
+    
+}
+
+.pt:hover
+{
+  cursor: pointer;
+}
+.pt:active
+{
+  box-shadow:inset -2px -2px 6px rgb(255, 255, 255),
+    inset 2px 2px 6px rgba(121, 130, 160, 0.747);
+    color: #185ef0;
+}
+.buttont:hover
+{
+    box-shadow:inset -4px -4px 8px rgb(255, 255, 255),
+    inset  4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+.buttont i
+{
+    left: -11px;
+    position: relative
+}
+input
+{   
+    width: 220px;
+    height: 45px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight:500;
+    outline: none;
+    border: none;
+    padding: 5px 15px;
+   background:#ebecf0;
+    color: #8a92a5;
+    box-shadow:inset -4px -4px 8px rgb(255, 255, 255),
+    inset 4px 4px 8px rgba(121, 130, 160, 0.747);
+
+}
+::placeholder
+{
+    text-align: center;
+    font-weight:500;
+    text-transform: capitalize;
+    color: #8a92a5;
+} 
+
+
+
+
+
+
+
+.container .box1 .NextpsBt
+{
+    display:block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.NPB  
+{
+  position: relative;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  margin-left: 14px;
+  box-shadow:-2px -2px 6px rgb(255, 255, 255),
+    2px 2px 6px rgba(121, 130, 160, 0.747);
+    font-size: 18px;
+    color: #8a92a5;
+
+} 
+.NPB:active
+{
+  box-shadow:inset -2px -2px 6px rgb(255, 255, 255),
+    inset 2px 2px 6px rgba(121, 130, 160, 0.747);
+    color: #185ef0;
+}
+ 
+
+
+
+
+
+
+
+.container .box1 .radiobg
+{
+    display:block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.radio 
+{
+    margin-top: 21px;
+    top: 21px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 18px;
+}
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+.radio__input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+.radio__checkmark {
+    -webkit-box-align: center;
+    align-items: center;
+    box-shadow:-4px -4px 12px rgb(255, 255, 255),
+     4px 4px 12px rgba(121, 130, 160, 0.747);
+     background: #ebecf0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    -webkit-transition: all 260ms ease;
+    transition: all 260ms ease;
+    border-radius: 50%;
+}
+.radio__checkmark::after {
+    border: 3px solid #8a92a5 ;
+    border-radius: 50%;
+    content: "";
+    padding: 7px;
+    -webkit-transition: all 260ms ease;
+    transition: all 260ms ease;
+}
+.radio__input:checked ~ .radio__checkmark, 
+.radio__input:checked:hover ~ .radio__checkmark
+{
+  box-shadow:inset -3px -3px 6px rgb(255, 255, 255),
+    inset 3px 3px 6px rgba(121, 130, 160, 0.747);
+  
+    
+}
+.radio__input:checked ~ .radio__checkmark::after,
+ .radio__input:checked:hover ~ .radio__checkmark::after {
+    background-color:#8a92a5;
+}
+   
+  
+.container .box1 .togglebx
+{
+    display: block;
+    position: relative;
+    float: right;
+    top: -132px;
+}
+
+
+.labelt
+ {
+   padding: 50px;
+ } 
+  
+.con
+{
+    position: relative;
+    height: 35px;
+    width: 75px;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow:  -4px -4px 8px #ffffff, 4px 4px 12px #9fa3b3;;
+}
+.switch
+{
+    display: none;
+}
+.toggle
+{
+    height: 100%;
+    width: 200%;
+    background: #fff;
+    border-radius: 20px;
+    transition: transform 0.4s cubic-bezier(0.85,0.05,0.18,1.35);
+    transform: translate3d(-75%,0,0);
+    box-shadow: 
+        -4px -4px 8px #ffffff,
+        4px 4px 8px  #d1d9e6;
+}
+.switch:checked ~ .toggle
+{
+    transform: translate3d(25%,0,0);
+    background-color: #1e7ae8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container .box1 .progress
+{
+    top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 111%;
+}
+
+.therm
+ {height:30px;
+ border-radius:5px;
+ }
+  .outer-therm
+  {margin:20px 0;
+    box-shadow:inset -2px -2px 6px rgb(255, 255, 255),
+    inset 2px 2px 6px rgba(121, 130, 160, 0.747);
+    border-radius: 50px;
+    width: 30px !important;
+    position: absolute !important;
+    bottom: 0;
+  }
+  .inner-therm
+  {
+    border-radius: 50px;
+    width: 30px !important;
+
+  }
+  .vertical.inner-therm span{width:100%;text-align:center;}
+  .vertical.inner-therm
+  {position:absolute;
+  bottom:0;
+  }
+
+
+
+.progress .skill
+{
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container .box2
+{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 20px;
+  padding: 10px 10px;
+}  
+
+
+
+
+
+
+.container .box2.searchbx
+{
+  position: relative;
+  display: block;
+}  
+.field {
+    height: 40px;
+    width: 180%;
+    display: flex;
+    position: relative;
+} 
+.field span {
+    position: absolute;
+    width: 50px;
+    line-height: 42px;
+    color: #8a92a5;
+    left: 14px
+} 
+.field input {
+    height: 100%;
+    width: 100%;
+    padding-left: 45px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    color: #595959;
+    background:#ebecf0;
+    border-radius: 25px;
+    box-shadow:inset -3px -3px 6px  #ffffff,
+      inset  3px 3px 6px  #d1d9e6;
+}
+.field label {
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    pointer-events: none;
+    color: #666666;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container .box2 .neumorphic-slider
+{
+  position: relative;
+  display: block;
+  top: 28px;
+}
+
+
+
+.neumorphic-slider {
+  width: 260px;
+  margin: auto;
+}
+
+.neumorphic-slider__back {
+  height: 23px;
+  background-color: var(--back-color);
+  border-radius: 50px;
+  box-shadow: -4px -4px 12px rgb(255, 255, 255), 4px 4px 12px rgba(121, 130, 160, 0.747);
+
+}
+
+.neumorphic-slider {
+  width: 985px;
+  position: absolute;
+}
+
+.neumorphic-slider__back {
+  width: calc(100% + 20px);
+  margin-left: -10px;
+}
+
+
+.neumorphic-slider__line {
+  height: 16px;
+  background: linear-gradient(to right, #185ef0, #30CFD0);
+  margin-top: -20px;
+  margin-left: -6px;
+  border-radius: 8px;
+  opacity: 1;
+  width: calc(var(--value) + 4px);
+}
+
+.neumorphic-slider__thumb {
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), 0px 0px 15px rgba(55, 84, 170, .3);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--back-color);
+  left: var(--value);
+  top: 1px;
+  margin-left: -10px;
+  cursor: pointer;
+}
+
+.neumorphic-slider__popover {
+  position: absolute;
+  background-color: var(--back-color);
+  left: var(--value);
+  font-weight: 600;
+  width: 60px;
+  height: 35px;
+  top: -50px;
+  margin-left: -30px;
+  box-shadow:-2px -2px 6px rgb(255, 255, 255),
+   2px 2px 6px rgba(121, 130, 160, 0.747);    
+  color: #6D7587;    
+  padding: 8px 0;
+  text-align: center;
+
+}
+
+.neumorphic-slider__popover::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -6px;
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  border-color: var(--back-color) transparent transparent transparent;
+}
+
+
+
+</style>    
+</head>
+<body>
+<div class="container">
+    <div class="box1">
+        <div class="AC_tx">
+            <h1>Ac</h1>
+        </div>
+
+        <div class="button_Share">
+            <button class="btn2">share</button>
+            <button class="btn2">Loaction</button>
+        </div>
+    </div> 
+    
+
+    <div class="box1">
+        <div class="button_t">
+            <span class="buttont">Button</span>
+            <input type="email" placeholder="input">
+            <span class="buttont pt">Like</span>
+            <span class="buttont"><i class="fas fa-user-plus"></i>Add User</span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="box1">
+        <div class="NextpsBt">
+            <button class="NPB"><i class="fas fa-angle-left"></i></button>
+            <button class="NPB"><i class="fas fa-angle-right"></i></button>
+        </div>
+
+        <div class="radiobg">
+            <label class="radio">
+              <span class="sr-only">Checkbox</span>
+              <input type="radio" class="radio__input" name="example">
+              <span class="radio__checkmark"></span>
+            </label>
+            <label class="radio">
+              <span class="sr-only">Checkbox</span>
+              <input type="radio" class="radio__input" name="example" checked="">
+              <span class="radio__checkmark"></span>
+            </label>
+        </div>
+
+
+        <div class="togglebx">
+            <label class="labelt">
+              <div class="con">
+                  <input class="switch" type="checkbox" name="check" value="check">
+                  <div class="toggle"></div>
+              </div>
+            </label>
+            <label class="labelt">
+              <div class="con">
+                  <input class="switch" type="checkbox" name="check" value="check" checked>
+                  <div class="toggle"></div>
+              </div>
+            </label>
+        </div>
+
+
+
+        <div class="progress">
+            <div class="skill">
+              <div class="therm outer-therm vertical" 
+              style="width:50px;height:150px;background-color:#eeeff2">
+               <div class="therm inner-therm vertical" style="background-color:#1656f0; height: 50%; width: 50px;">
+               </div>
+              </div>
+            </div>
+          
+          
+            <div class="skill">
+              <div class="therm outer-therm vertical" 
+              style="width:50px;height:200px;background-color:#eeeff2">
+               <div class="therm inner-therm vertical" style="background-color:#1656f0; height: 80%; width: 50px;">
+                 
+               </div>
+              </div>
+            </div>
+          
+          
+            <div class="skill">
+              <div class="therm outer-therm vertical" 
+              style="width:50px;height:108px;background-color:#eeeff2">
+               <div class="therm inner-therm vertical" style="background-color:#1656f0; height: 55%; width: 50px;">
+                  
+               </div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="therm outer-therm vertical" 
+              style="width:50px;height:216px;background-color:#eeeff2">
+               <div class="therm inner-therm vertical" style="background-color:#1656f0; height: 80%; width: 50px;">
+                  
+               </div>
+              </div>
+          </div>
+          
+          
+          <div class="skill">
+            <div class="therm outer-therm vertical" 
+            style="width:50px;height:150px;background-color:#eeeff2">
+             <div class="therm inner-therm vertical" style="background-color:#1656f0; height: 65%; width: 50px;">
+                
+             </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+    </div>
+
+
+    
+    <div class="box2">
+      <div class="searchbx">
+        <div class="field">
+          <span class="fas fa-search" aria-hidden="true"></span>
+          <input type="search" placeholder="search">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="box2">
+      <div class="neumorphic-slider" onselectstart="return false">
+        <div class="neumorphic-slider__back"></div>
+        <div class="neumorphic-slider__line"></div>
+        <div class="neumorphic-slider__thumb"></div>
+        <div class="neumorphic-slider__popover">40%</div>
+      </div>
+    </div>  
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+ //progress bar // 
+$('.neumorphic-slider__thumb').on('mousedown', function(){
+  $(document).on('mousemove.mm', function(e){
+    var new_value = 0;
+    if (e.clientX < $('.neumorphic-slider').offset().left) {
+      new_value = '0%';
+    } else if (e.clientX > $('.neumorphic-slider').offset().left + $('.neumorphic-slider').width() - 10) {
+      new_value = '100%';
+    } else {
+      new_value = ((e.clientX - $('.neumorphic-slider').offset().left) / ($('.neumorphic-slider').width() - 10) * 100).toFixed(0) + '%';
+    }
+    document.documentElement.style.setProperty('--value', new_value);
+    $('.neumorphic-slider__popover').text(new_value);
+  });
+  $(document).on('mouseup.mu', function(){
+    $(document).off('mousemove.mm');
+    $('.neumorphic-slider__thumb').off('mouseup.mu');
+  });
+});    
+</script>
+</div>    
+</body>
+</html>
